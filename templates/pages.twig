@@ -1,0 +1,9 @@
+{% set type = entry.type.handle|default(category.group.handle|default('no-type')) %}
+{% if craft.app.request.segments|first == 'search' %}
+    {% set type = 'search' %}
+{% elseif craft.app.request.segments|first == 'sitemap' %}
+    {% set type = 'sitemap' %}
+{% elseif type == 'no-type' %}
+    {% set type = craft.request.firstSegment ~ '/' ~ craft.request.getSegment(2) %}
+{% endif %}
+{% include 'pages/' ~ type %}

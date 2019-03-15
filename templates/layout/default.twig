@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+    {% include 'includes/head' %}
+</head>
+<body class="{{ craft.app.request.segments|first ?: 'home'}} {{ currentUser ? 'logged-in' : '' }}">
+
+  {% include 'includes/header' %}
+
+  <main>
+  {% block main %}{% endblock %}
+  </main>
+
+  {% include 'includes/footer' %}
+  {% include 'includes/scripts' %}
+</body>
+</html>

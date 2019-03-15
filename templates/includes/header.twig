@@ -1,0 +1,62 @@
+<header id="site-header">
+  <section class="page-header">
+    <div class="logo">
+      <a href="/">
+        <img src="/assets/img/logo-mark.svg" alt="Widmyer Corporation logo">
+      </a>
+    </div>
+    <div class="menu">
+      <button id="loginNav-menuOpen">Login</button>
+      <button id="mainNav-menuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="mainNavigation">
+        <button id="mainNav-menuClose" class="menu-close">close</button>
+        <ul>
+          {% set navpoints = craft.navigation.nodes().handle('mainNav') %}
+          {% for point in navpoints.all() %}
+            <li><a href="{{ point.url }}"{{ point.newWindow ? ' target="_blank"' }}>{{ point }}</a></li>
+          {% endfor %}
+        </ul>
+        <div class="contact">
+          <div class="info">
+            {% include 'blocks/contactInfo' %}
+          </div>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank" title="visit us on Facebook"><img src="/assets/img/icon-facebook.svg" alt="facebook icon" /></a>
+            <a href="https://twitter.com" target="_blank" title="visit us on Twitter"><img src="/assets/img/icon-twitter.svg" alt="twitter icon" /></a>
+          </div>
+        </div>
+      </nav>
+      <nav id="loginNavigation">
+        <button id="loginNav-menuClose"class="menu-close">close</button>
+        <ul>
+          {% set navpoints = craft.navigation.nodes().handle('loginNavigation') %}
+          {% for point in navpoints.all() %}
+            <li><a href="{{ point.url }}"{{ point.newWindow ? ' target="_blank"' }}>{{ point }}</a></li>
+          {% endfor %}
+        </ul>
+        <div class="contact">
+          <div class="info">
+            {% include 'blocks/contactInfo' %}
+          </div>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank" title="visit us on Facebook"><img src="/assets/img/icon-facebook.svg" alt="facebook icon" /></a>
+            <a href="https://twitter.com" target="_blank" title="visit us on Twitter"><img src="/assets/img/icon-twitter.svg" alt="twitter icon" /></a>
+          </div>
+        </div>
+      </nav>
+      {% set img = generalSettings.navMenuImage.one() %}
+      {% set transform = craft.imager.transformImage(img, {
+        width: 1400,
+        height: 800,
+        mode: 'crop',
+        format: 'jpeg',
+        jpegQuality: 70
+      }) %}
+      <div class="menu-img" style="background-image: url({{ transform.url }}); background-size: cover; background-position: {{ img.focalPoint | first * 100 ~ '%'}} {{ img.focalPoint | last * 100 ~ '%' }}"></div>
+    </div>
+  </section>
+</header>

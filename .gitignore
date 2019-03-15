@@ -1,0 +1,31 @@
+### VARIOUS OS FILES
+/.idea
+.DS_Store
+
+
+### CRAFT ENV FILES
+/.env
+/.env.*
+craft
+craft.bat
+/config/project.yaml
+
+
+### CRAFT UPDATE FILES
+/vendor/*
+/storage/*
+/node_modules/*
+
+
+### SITE MEDIA FILES
+web/uploads/*
+web/imager/*
+
+
+### DEVELOPMENT FILES
+/source
+/.ftpconfig
+/comps
+/gulpfile.js
+/package-lock.json
+/package.json
