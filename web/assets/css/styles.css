@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -348,3 +348,39 @@ img {
   padding-right: 2rem;
   width: 100%;
   margin: auto; }
+
+.home .hero {
+  margin: 0 auto 4rem;
+  max-width: 250px;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 3rem 0; }
+  .home .hero h1 span {
+    display: block;
+    line-height: 0.9; }
+    .home .hero h1 span:first-child {
+      font-size: 29px;
+      font-weight: 600; }
+    .home .hero h1 span:nth-child(2) {
+      font-size: 47px;
+      font-weight: 200; }
+    .home .hero h1 span:last-child {
+      font-size: 50px;
+      font-weight: 400;
+      letter-spacing: 0.06em; }
+  .home .hero svg {
+    margin: 0 auto; }
+  .home .hero > div {
+    text-align: center; }
+    .home .hero > div img {
+      margin: 0 auto; }
+
+.logo {
+  font-size: 1.55em;
+  font-weight: 600;
+  line-height: 1; }
