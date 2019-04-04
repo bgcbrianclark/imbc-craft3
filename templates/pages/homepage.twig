@@ -20,9 +20,12 @@
 
   <div class="block hero">
     <a href="/" class="logo">Hi. I'm Brian.</a>
-    <h1><span>I'm into</span> <span>Developing</span> <span>Solutions</span></h1>
+    <div class="row">
+      <h1><span>I'm into</span> <span>Developing</span> <span>Solutions</span></h1>
 
-    {% include 'svg/website-mockup-desktop.svg'%}
+      {% include 'svg/website-mockup-desktop.svg'%}
+    </div>
+
 
     <div>
       <p>Here's what that means</p>
@@ -31,7 +34,7 @@
 
   </div>
   <div class="svg-container">
-    {% include 'includes/svg/hero-codebg.svg' %}  
+    {% include 'includes/svg/hero-codebg.svg' %}
   </div>
 
 
@@ -39,7 +42,7 @@
 
   {# intro #}
   <section class="block">
-    <div class="container">
+    <div class="container grid-2">
       <div class="content rte">
         <h2>Building a website isn’t always enough.</h2>
         <p>I offer strategy to accomplish your business or personal goals. Getting your clients, customers or users through the door is where I shine.</p>
@@ -68,6 +71,8 @@
   <section class="block">
     <div class="container">
       <h2>Services and Solutions</h2>
+    </div>
+    <div class="container grid-2">
       <div class="image">
         <img src="https://placehold.it/700x630" alt="">
       </div>
@@ -76,7 +81,6 @@
         <p>I build websites based around the needs and goals of your chosen conversion, whether that be to sell a product, promote an event, or share your expertise with the world. My goal is to open my experience to you for the benefit of your business.</p>
         <p>I can build quickly and efficiently a static site that will represent your business, or add a dynamic content management system that will allow you to update your site and keep your content fresh.</p>
       </div>
-
     </div>
     <div class="container">
       <div class="content rte">

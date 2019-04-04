@@ -13469,9 +13469,11 @@ function getScrollPosition() {
     y: window.pageYOffset
   };
   // If you want to check distance
+  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   if (scrollObject.y > 200) {
-    console.log("greater than 200");
-    headerNav.classList.add("active");
+    if (viewportWidth < 992) {
+      headerNav.classList.add("active");
+    }
   } else {
     headerNav.classList.remove("active");
   }
