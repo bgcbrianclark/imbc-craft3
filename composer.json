@@ -1,11 +1,11 @@
 {
   "require": {
-    "aelvan/imager": "v2.1.7",
-    "craftcms/cms": "3.1.19",
-    "craftcms/contact-form": "^2.2",
+    "aelvan/imager": "v2.1.8.1",
+    "craftcms/cms": "3.1.21",
+    "craftcms/contact-form": "2.2.4",
     "craftcms/redactor": "^2.3",
     "ether/seo": "^3.5",
-    "rias/craft-contact-form-extensions": "1.1.1",
+    "rias/craft-contact-form-extensions": "1.1.4",
     "sebastianlenz/linkfield": "^1.0",
     "verbb/field-manager": "2.0.5",
     "verbb/super-table": "2.1.16",
