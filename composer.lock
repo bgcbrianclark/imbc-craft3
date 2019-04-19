@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc42b314f101148bf02e8fb466021ab5",
+    "content-hash": "41b6d1ef7f360ae18c865721e8b1e498",
     "packages": [
         {
             "name": "aelvan/imager",
-            "version": "v2.1.8.1",
+            "version": "v2.1.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aelvan/Imager-Craft/zipball/1f19f4eddb762418f4b7f0cbc7362d1f44fb791d",
-                "reference": "1f19f4eddb762418f4b7f0cbc7362d1f44fb791d",
+                "url": "https://api.github.com/repos/aelvan/Imager-Craft/zipball/f7e80a3cd8c3b3a29fd8ca8961bf452727d52a32",
+                "reference": "f7e80a3cd8c3b3a29fd8ca8961bf452727d52a32",
                 "shasum": ""
             },
             "require": {
@@ -68,7 +68,7 @@
                 "docs": "https://github.com/aelvan/Imager-Craft/blob/craft3/README.md",
                 "issues": "https://github.com/aelvan/Imager-Craft/issues"
             },
-            "time": "2019-04-03T13:47:30+00:00"
+            "time": "2019-04-13T19:47:44+00:00"
         },
         {
             "name": "albertcht/invisible-recaptcha",
@@ -126,11 +126,11 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.91.1",
+            "version": "3.91.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/808a8cde13d5ba458d6365828385fead955c933e",
-                "reference": "808a8cde13d5ba458d6365828385fead955c933e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9185a0e00f833ca407ab85451dc523b9dd78fbab",
+                "reference": "9185a0e00f833ca407ab85451dc523b9dd78fbab",
                 "shasum": ""
             },
             "require": {
@@ -185,7 +185,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-04-02T18:07:41+00:00"
+            "time": "2019-04-17T18:08:24+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -470,11 +470,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.21",
+            "version": "3.1.23",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/38c1dbc42fa1ead35b18872adf8d5339894fc3d6",
-                "reference": "38c1dbc42fa1ead35b18872adf8d5339894fc3d6",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/40add5d4d5784caf54f49b3fdf3a4cb46fcd9abe",
+                "reference": "40add5d4d5784caf54f49b3fdf3a4cb46fcd9abe",
                 "shasum": ""
             },
             "require": {
@@ -503,7 +503,7 @@
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
-                "twig/twig": "^2.7.2",
+                "twig/twig": "~2.7.2",
                 "yii2tech/ar-softdelete": "^1.0.2",
                 "yiisoft/yii2": "~2.0.17.0",
                 "yiisoft/yii2-debug": "^2.0.10",
@@ -550,7 +550,7 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2019-04-03T17:44:20+00:00"
+            "time": "2019-04-16T16:41:36+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1188,11 +1188,11 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.4.0",
+            "version": "v1.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/196237248e636a3554a7d9e4dfddeb97f450ab5c",
-                "reference": "196237248e636a3554a7d9e4dfddeb97f450ab5c",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/0f75e20e7392e863f5550ed2c2d3d50af21710fb",
+                "reference": "0f75e20e7392e863f5550ed2c2d3d50af21710fb",
                 "shasum": ""
             },
             "require": {
@@ -1203,11 +1203,8 @@
                 "psr/cache": "^1.0",
                 "psr/http-message": "^1.0"
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^1.11",
-                "guzzlehttp/promises": "0.1.1|^1.3",
-                "phpunit/phpunit": "^4.8.36|^5.7",
-                "sebastian/comparator": ">=1.2.3"
+            "suggest": {
+                "phpseclib/phpseclib": "May be used in place of OpenSSL for signing strings. Please require version ^2."
             },
             "type": "library",
             "autoload": {
@@ -1215,7 +1212,6 @@
                     "Google\\Auth\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -1226,18 +1222,19 @@
                 "google",
                 "oauth2"
             ],
-            "time": "2018-09-17T20:29:21+00:00"
+            "time": "2019-04-16T18:48:28+00:00"
         },
         {
             "name": "google/cloud",
-            "version": "v0.98.0",
+            "version": "v0.99.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php/zipball/807e6396f85997c12c94e905b142eb8c28582263",
-                "reference": "807e6396f85997c12c94e905b142eb8c28582263",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php/zipball/d59b72430dc2305db2bb2625183ffe1de25476a1",
+                "reference": "d59b72430dc2305db2bb2625183ffe1de25476a1",
                 "shasum": ""
             },
             "require": {
+                "google/auth": "^1.5.1",
                 "google/common-protos": "^1.0",
                 "google/gax": "^1.0",
                 "guzzlehttp/guzzle": "^5.3|^6.0",
@@ -1249,42 +1246,42 @@
                 "rize/uri-template": "~0.3"
             },
             "replace": {
-                "google/cloud-asset": "0.3.0",
-                "google/cloud-automl": "0.2.0",
-                "google/cloud-bigquery": "1.5.0",
-                "google/cloud-bigquerydatatransfer": "0.10.0",
-                "google/cloud-bigtable": "0.12.0",
+                "google/cloud-asset": "0.3.1",
+                "google/cloud-automl": "0.2.1",
+                "google/cloud-bigquery": "1.6.0",
+                "google/cloud-bigquerydatatransfer": "0.10.1",
+                "google/cloud-bigtable": "0.12.1",
                 "google/cloud-common-protos": "0.2.0",
-                "google/cloud-container": "0.10.0",
-                "google/cloud-core": "1.27.0",
-                "google/cloud-dataproc": "0.11.0",
-                "google/cloud-datastore": "1.9.0",
-                "google/cloud-debugger": "0.18.0",
-                "google/cloud-dialogflow": "0.7.0",
-                "google/cloud-dlp": "0.18.0",
-                "google/cloud-error-reporting": "0.14.0",
-                "google/cloud-firestore": "1.4.0",
-                "google/cloud-iot": "0.7.0",
-                "google/cloud-kms": "1.3.0",
-                "google/cloud-language": "0.18.0",
-                "google/cloud-logging": "1.16.0",
-                "google/cloud-monitoring": "0.16.0",
-                "google/cloud-oslogin": "0.9.0",
-                "google/cloud-pubsub": "1.11.0",
-                "google/cloud-redis": "0.7.0",
-                "google/cloud-scheduler": "0.4.0",
-                "google/cloud-security-center": "0.1.0",
-                "google/cloud-spanner": "1.14.0",
-                "google/cloud-speech": "0.23.0",
-                "google/cloud-storage": "1.11.0",
-                "google/cloud-talent": "0.3.0",
-                "google/cloud-tasks": "0.9.0",
-                "google/cloud-text-to-speech": "0.4.0",
-                "google/cloud-trace": "0.14.0",
-                "google/cloud-translate": "1.2.8",
-                "google/cloud-videointelligence": "1.5.0",
-                "google/cloud-vision": "0.21.0",
-                "google/cloud-web-risk": "0.1.0"
+                "google/cloud-container": "0.10.1",
+                "google/cloud-core": "1.28.0",
+                "google/cloud-dataproc": "0.11.1",
+                "google/cloud-datastore": "1.9.1",
+                "google/cloud-debugger": "0.18.1",
+                "google/cloud-dialogflow": "0.7.1",
+                "google/cloud-dlp": "0.18.1",
+                "google/cloud-error-reporting": "0.14.1",
+                "google/cloud-firestore": "1.4.1",
+                "google/cloud-iot": "0.7.1",
+                "google/cloud-kms": "1.3.1",
+                "google/cloud-language": "0.19.0",
+                "google/cloud-logging": "1.16.1",
+                "google/cloud-monitoring": "0.16.1",
+                "google/cloud-oslogin": "0.9.1",
+                "google/cloud-pubsub": "1.11.1",
+                "google/cloud-redis": "0.8.0",
+                "google/cloud-scheduler": "0.5.0",
+                "google/cloud-security-center": "0.1.1",
+                "google/cloud-spanner": "1.15.0",
+                "google/cloud-speech": "0.23.1",
+                "google/cloud-storage": "1.12.0",
+                "google/cloud-talent": "0.3.1",
+                "google/cloud-tasks": "0.10.0",
+                "google/cloud-text-to-speech": "0.4.1",
+                "google/cloud-trace": "0.14.1",
+                "google/cloud-translate": "1.2.9",
+                "google/cloud-videointelligence": "1.5.1",
+                "google/cloud-vision": "0.21.1",
+                "google/cloud-web-risk": "0.1.1"
             },
             "suggest": {
                 "opis/closure": "May be used to serialize closures to process jobs in the batch daemon. Please require version ^3.",
@@ -1424,7 +1421,7 @@
                 "translation",
                 "vision"
             ],
-            "time": "2019-04-02T21:07:18+00:00"
+            "time": "2019-04-16T20:44:33+00:00"
         },
         {
             "name": "google/common-protos",
@@ -1457,11 +1454,11 @@
         },
         {
             "name": "google/gax",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/b25ecc9d5debad5713a66e79f491fbe5244bcc73",
-                "reference": "b25ecc9d5debad5713a66e79f491fbe5244bcc73",
+                "url": "https://api.github.com/repos/googleapis/gax-php/zipball/d346b7a3f2b31bc9f0b226faa3d32bd721111b82",
+                "reference": "d346b7a3f2b31bc9f0b226faa3d32bd721111b82",
                 "shasum": ""
             },
             "require": {
@@ -1475,7 +1472,7 @@
                 "php": ">=5.5"
             },
             "conflict": {
-                "ext-protobuf": "<3.7.1"
+                "ext-protobuf": "<3.7.0"
             },
             "type": "library",
             "autoload": {
@@ -1492,7 +1489,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2019-03-27T14:49:53+00:00"
+            "time": "2019-04-04T23:03:23+00:00"
         },
         {
             "name": "google/grpc-gcp",
@@ -1899,18 +1896,15 @@
         },
         {
             "name": "imgix/imgix-php",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/2acbceb98931253b4c672e7f2001cbebd2854b91",
-                "reference": "2acbceb98931253b4c672e7f2001cbebd2854b91",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/8decfc829a96a20b7a51f40fc7781d9929d08d9f",
+                "reference": "8decfc829a96a20b7a51f40fc7781d9929d08d9f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
@@ -1918,7 +1912,6 @@
                     "Imgix\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -1926,7 +1919,7 @@
             "keywords": [
                 "imgix"
             ],
-            "time": "2018-08-16T23:08:36+00:00"
+            "time": "2019-04-08T20:48:07+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2837,11 +2830,11 @@
         },
         {
             "name": "rias/craft-contact-form-extensions",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rias500/craft-contact-form-extensions/zipball/83fe865a901da61494610e3beef693b9a72ee4ba",
-                "reference": "83fe865a901da61494610e3beef693b9a72ee4ba",
+                "url": "https://api.github.com/repos/Rias500/craft-contact-form-extensions/zipball/37900c33cff0487534375dd8390199fa9e40abe8",
+                "reference": "37900c33cff0487534375dd8390199fa9e40abe8",
                 "shasum": ""
             },
             "require": {
@@ -2888,7 +2881,7 @@
                 "docs": "https://github.com/Rias500/craft-contact-form-extensions/blob/master/README.md",
                 "issues": "https://github.com/Rias500/craft-contact-form-extensions/issues"
             },
-            "time": "2019-04-01T14:51:05+00:00"
+            "time": "2019-04-15T14:11:09+00:00"
         },
         {
             "name": "rize/uri-template",
@@ -4029,15 +4022,15 @@
         },
         {
             "name": "verbb/super-table",
-            "version": "2.1.16",
+            "version": "2.1.17",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/60947a5f4f2ef9f2972dee95ff460897e743deaf",
-                "reference": "60947a5f4f2ef9f2972dee95ff460897e743deaf",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/03dadd201326af0bd93d8b37f9e099e87a057fdb",
+                "reference": "03dadd201326af0bd93d8b37f9e099e87a057fdb",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.1.13"
+                "craftcms/cms": "^3.1.20"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4053,7 +4046,6 @@
                     "verbb\\supertable\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4065,13 +4057,20 @@
             ],
             "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "super table"
             ],
-            "time": "2019-03-09T04:08:51+00:00"
+            "support": {
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/super-table/issues?state=open",
+                "source": "https://github.com/verbb/super-table",
+                "docs": "https://github.com/verbb/super-table",
+                "rss": "https://github.com/verbb/super-table/commits/v2.atom"
+            },
+            "time": "2019-04-09T08:37:27+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
