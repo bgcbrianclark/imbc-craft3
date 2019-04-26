@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632.307" height="173.55" viewBox="0 0 632.307 173.55">
+  <g id="Group_154" data-name="Group 154" transform="translate(-271.693 -4465.362)">
+    <g id="Group_152" data-name="Group 152">
+      <rect id="Value" width="18.268" height="76.119" rx="3" transform="translate(475.847 4562.794)" fill="#d2dee2"/>
+      <rect id="Value-2" data-name="Value" width="18.268" height="124.834" rx="3" transform="translate(518.473 4514.078)" fill="#d2dee2"/>
+      <rect id="Value-3" data-name="Value" width="18.268" height="149.192" rx="3" transform="translate(561.1 4489.72)" fill="#d2dee2"/>
+      <rect id="Value-4" data-name="Value" width="18.268" height="124.834" rx="3" transform="translate(603.726 4514.078)" fill="#d2dee2"/>
+      <rect id="Value-5" data-name="Value" width="18.268" height="173.55" rx="3" transform="translate(646.353 4465.362)" fill="#adc4d5"/>
+    </g>
+    <g id="Group_151" data-name="Group 151">
+      <path id="Value-6" data-name="Value" d="M88.453,86.787A24.583,24.583,0,1,1,70.486,45.519V0C31.726,0,0,31.52,0,70.029s31.726,70.029,70.486,70.029a69.644,69.644,0,0,0,51.3-22.171Z" transform="translate(271.693 4498.468)" fill="#d2dee2" fill-rule="evenodd"/>
+      <path id="Value-7" data-name="Value" d="M23,0V45.519a24.51,24.51,0,0,1,24.51,24.51H93.029A70.244,70.244,0,0,0,23,0Z" transform="translate(318.723 4498.468)" fill="#718daf" fill-rule="evenodd"/>
+      <path id="Value-8" data-name="Value" d="M37.356,23A24.3,24.3,0,0,1,28,42.161L56,77.805A69.449,69.449,0,0,0,82.805,23Z" transform="translate(328.946 4545.497)" fill="#adc4d5" fill-rule="evenodd"/>
+    </g>
+    <g id="Group_153" data-name="Group 153">
+      <path id="Value-9" data-name="Value" d="M86,63.4c0,47.9-38.708,87.1-86,87.1V63.4L58.771,0A86.31,86.31,0,0,1,86,63.4Z" transform="translate(818.001 4615.999) rotate(180)" fill="#d2dee2" fill-rule="evenodd"/>
+      <path id="Value-10" data-name="Value" d="M86.847,86H0A86.057,86.057,0,0,1,23.635,27.227,87.533,87.533,0,0,1,86.847,0C109.518,0,130.27,9.069,146.2,23.4Z" transform="translate(902.573 4637.499) rotate(180)" fill="#718daf" fill-rule="evenodd"/>
+      <path id="Value-11" data-name="Value" d="M0,0A86.262,86.262,0,0,0,86,86V0ZM129,86,94.6,8.6,172,43C164.343,63.063,147.156,78.345,129,86Z" transform="translate(904 4551.5) rotate(180)" fill="#adc4d5" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

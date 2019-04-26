@@ -2,22 +2,6 @@
 
 {% block main %}
 
-  <header class="site-header">
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <nav class="contact-nav">
-      <ul>
-        <li><img src="/assets/img/icon-envelope.svg" alt="Send an Email"></li>
-        <li><img src="/assets/img/icon-facebook.svg" alt="Visit my facebook"></li>
-        <li><img src="/assets/img/icon-linkedin.svg" alt="Visit my linkedin"></li>
-      </ul>
-    </nav>
-  </header>
-
   <div class="block hero">
     <a href="/" class="logo">Hi. I'm Brian.</a>
     <div class="row">
@@ -25,20 +9,14 @@
 
       {% include 'svg/website-mockup-desktop.svg'%}
     </div>
-
-
     <div>
       <p>Here's what that means</p>
       <img src="/assets/img/icon-downarrow.svg" alt="">
     </div>
-
   </div>
   <div class="svg-container">
     {% include 'includes/svg/hero-codebg.svg' %}
   </div>
-
-
-
 
   {# intro #}
   <section class="block">
@@ -47,10 +25,36 @@
         <h2>Building a website isn’t always enough.</h2>
         <p>I offer strategy to accomplish your business or personal goals. Getting your clients, customers or users through the door is where I shine.</p>
         <p>From blogs to fully featured Shopify E-Commerce solutions, I have the experience to handle your request.</p>
+        <div class="button-group"><a href="/work" class="btn">See Some Work</a></div>
       </div>
       <div class="image desktop-only">
-        <img src="https://placehold.it/700x630" alt="">
+        <img src="/assets/img/content-confused.svg" alt="">
       </div>
+    </div>
+  </section>
+
+  {# services #}
+  <section class="block">
+    <div class="container">
+      <h2>Services and Solutions</h2>
+    </div>
+    <div class="container grid-2">
+      <div class="image">
+        <img src="/assets/img/content-websites.svg" alt="">
+      </div>
+      <div class="content rte">
+        <h3>Custom Websites</h3>
+        <p>I build websites based around the needs and goals of your chosen conversion, whether that be to sell a product, promote an event, or share your expertise with the world. My goal is to open my experience to you for the benefit of your business.</p>
+        <p>I can build quickly and efficiently a static site that will represent your business, or add a dynamic content management system that will allow you to update your site and keep your content fresh.</p>
+      </div>
+    </div>
+  </section>
+  <section class="block special">
+    <div class="container">
+        <div class="content rte">
+          <h3>BRAND AND MARKETING CONSULTING</h3>
+          <p>I build websites based around the needs and goals of your chosen conversion, whether that be to sell a product, promote an event, or share your expertise with the world. My goal is to open my experience to you for the benefit of your business.</p>
+        </div>
     </div>
   </section>
 
@@ -63,34 +67,32 @@
         <p>All it takes is a message, and we will get your business moving.</p>
         <a href="/">@ Send a Message</a>
       </div>
-      <div class="image desktop-only"><img src="https://placehold.it/700x630" alt=""></div>
-    </div class="container">
+      <div class="image desktop-only"><img src="/assets/img/content-code-cutout.svg" alt=""></div>
+    </div>
   </section>
 
-  {# services #}
   <section class="block">
-    <div class="container">
-      <h2>Services and Solutions</h2>
-    </div>
     <div class="container grid-2">
       <div class="image">
-        <img src="https://placehold.it/700x630" alt="">
+        <img src="/assets/img/content-data.svg" alt="">
       </div>
       <div class="content rte">
-        <h3>Custom Websites</h3>
-        <p>I build websites based around the needs and goals of your chosen conversion, whether that be to sell a product, promote an event, or share your expertise with the world. My goal is to open my experience to you for the benefit of your business.</p>
-        <p>I can build quickly and efficiently a static site that will represent your business, or add a dynamic content management system that will allow you to update your site and keep your content fresh.</p>
+        <h3>On-Page SEO</h3>
+        <p>Are you trying to reach an audience and your current brand, website or marketing aren’t working? I can do a thorough analysis of your current marketing efforts and build a plan to increase your sales.</p>
       </div>
     </div>
-    <div class="container">
+  </section>
+  <section class="block">
+    <div class="container grid-2">
+
       <div class="content rte">
-        <h3>BRAND AND MARKETING CONSULTING</h3>
-        <p>I build websites based around the needs and goals of your chosen conversion, whether that be to sell a product, promote an event, or share your expertise with the world. My goal is to open my experience to you for the benefit of your business.</p>
+        <h3>PPC and Digital Marketing</h3>
+        <p>I am experienced with digital marketing tools and techniques, and know how to bridge the gap between having a great website and the eyes that need to see it.</p>
+      </div>
+      <div class="image">
+        <img src="/assets/img/content-social.svg" alt="">
       </div>
     </div>
   </section>
 
-<footer class="site-footer">
-  <p>Copyright &copy; 2018 Brian Clark</p>
-</footer>
 {% endblock %}

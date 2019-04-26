@@ -1,0 +1,101 @@
+{% extends 'layouts/default' %}
+
+{% block main %}
+
+  <section class="block page-title">
+    <div class="container">
+      <a href="/" class="logo">Hi, I'm Brian.</a>
+      <h1>{{ entry.title }}</h1>
+      <p>{{ entry.subtitle }}</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="container">
+      <div class="content rte">
+        {{ entry.body }}
+      </div>
+    </div>
+  </section>
+
+  {% for block in entry.portfolioList.all() %}
+
+    {% switch block.type %}
+
+      {% case 'portfolioCard' %}
+        {% set caseStudy = block.portfolioEntry.one() %}
+        <section class="block">
+          <div class="container">
+            <div class="card portfolio-card">
+              <div class="image">
+                {% set img = caseStudy.portfolioCardImage.one() %}
+                {% if img|length %}
+                {% set mobile = craft.imager.transformImage(img, {
+                  width: 375,
+                  height: 125,
+                  mode: 'crop',
+                  format: 'jpeg',
+                  jpegQuality: 70,
+                  position: img.getFocalPoint()
+                }) %}
+                {% set tablet = craft.imager.transformImage(img, {
+                  width: 992,
+                  height: 300,
+                  mode: 'crop',
+                  format: 'jpeg',
+                  jpegQuality: 70,
+                  position: img.getFocalPoint()
+                })%}
+                {% set desktop = craft.imager.transformImage(img, {
+                  width: 248,
+                  height: 248,
+                  mode: 'crop',
+                  format: 'jpeg',
+                  jpegQuality: 60,
+                  position: img.getFocalPoint()
+                })%}
+                <picture>
+                  <source media="(min-width: 992px)" srcset="{{ desktop.url }}">
+                  <source media="(min-width: 768px)" srcset="{{ tablet.url }}">
+                  <img src="{{ mobile.url }}" alt="">
+                </picture>
+                {% endif %}
+              </div>
+              <div class="icons">
+                <img src="/assets/img/icon-shopify.svg" alt="">
+                <img src="/assets/img/icon-craftcms.svg" alt="">
+              </div>
+              <div class="info">
+                <h3>{{ caseStudy.title }}</h3>
+                <p><strong>Challenges:</strong></p>
+                <ul>
+                  {% for challenge in caseStudy.portfolioChallenges.all() %}
+                    <li>{{ challenge.challenge }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="button-group">
+                <a href="{{ caseStudy.url }}" class="btn alt">View Project</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      {% case 'callToAction' %}
+        <section class="block">
+          <div class="container grid-2">
+            <div class="content rte">
+              {{ block.bodyText }}
+              <div class="button-group"><a href="{{ block.ctaLink.getUrl() }}" class="btn">{{ block.ctaLink.getText() }}</a></div>
+            </div>
+            <div class="image desktop-only">
+              <img src="/assets/img/content-confused.svg" alt="">
+            </div>
+          </div>
+        </section>
+
+    {% endswitch %}
+
+  {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'layouts/default' %}
+
+{% block main %}
+
+<section class="block page-title">
+    <a href="/" class="logo">Hi, I'm Brian.</a>
+    <h1>{{ entry.title }}</h1>
+    {{ entry.subtitle }}
+</section>
+
+<section class="portfolio-content block">
+  {% for block in entry.portfolioContentBlocks.all() %}
+    {% set gridArea = {
+      col: {
+        start: block.gridArea.columnStart,
+        end: block.gridArea.columnEnd
+      },
+      row: {
+        start: block.gridArea.rowStart,
+        end: block.gridArea.rowEnd
+      }
+    }%}
+    <div class="grid-col-start-{{ gridArea.col.start }} grid-col-end-{{gridArea.col.end }} grid-row-start-{{ gridArea.row.start }} grid-row-end-{{gridArea.row.end }}">
+      {% switch block.type %}
+        {% case 'html' %}
+        <div class="html">
+          {{ block.customHtml | raw }}
+        </div>
+
+        {% case 'bodyText' %}
+        <div class="content rte">
+          {{ block.bodyText }}
+        </div>
+
+        {% case 'image' %}
+          <div class="image{{ block.boxShadow ? ' shadow' }}">
+            <img src="{{ block.image.one().url }}" alt="">
+          </div>
+
+
+      {% endswitch %}
+    </div>
+  {% endfor %}
+</section>
+
+
+
+{% endblock %}
