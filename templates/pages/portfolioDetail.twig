@@ -8,6 +8,31 @@
     {{ entry.subtitle }}
 </section>
 
+<section class="block portfolio-hero">
+  <div class="image">
+    <div class="portfolio-image-desktop">
+      {% set image = entry.portfolioHero.desktopImage.one() %}
+      {% set transform = craft.imager.transformImage(image, {
+        width: 768
+      })%}
+      <img src="{{ transform.url }}" alt="{{ image.altText ?? image.title }}">
+    </div>
+    {% set imageMobile = entry.portfolioHero.mobileImage.one() %}
+    {% if imageMobile %}
+    {% set transform = craft.imager.transformImage(image, {
+      width: 768
+    })%}
+    <div class="portfolio-image-mobile">
+      <img src="{{ transform.url }}" alt="{{ image.altText ?? image.title }}">
+    </div>
+    {% endif %}
+  </div>
+  <div class="content">
+    <h2>Web Design with Architecture in Mind</h2>
+    <p>Mittmann Architect is a local, luxury architectural firm in Coeur d’Alene, Idaho. Shelli MIttmann creates amazing, luxurious designs for homes, businesses and more.</p>
+  </div>
+</section>
+
 <section class="portfolio-content block">
   {% for block in entry.portfolioContentBlocks.all() %}
     {% set gridArea = {

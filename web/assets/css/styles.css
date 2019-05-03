@@ -373,6 +373,115 @@ picture img,
 picture source {
   width: 100%; }
 
+form {
+  margin: 0 auto;
+  max-width: 675px; }
+
+input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(112, 112, 112, 0.5);
+  display: block;
+  min-height: 50px;
+  position: relative;
+  text-indent: 10px;
+  width: 100%;
+  z-index: 1; }
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid rgba(112, 112, 112, 0.5);
+  display: block;
+  min-height: 50px;
+  padding: 1rem;
+  width: 100%; }
+  textarea:focus {
+    outline: none;
+    border-color: #00ad8f; }
+
+.form-card {
+  margin-bottom: 2.75rem; }
+  .form-card h2 {
+    margin-bottom: 2rem; }
+    .form-card h2:after {
+      display: none; }
+  @media only screen and (min-width: 992px) {
+    .form-card {
+      padding: 2rem; } }
+
+.input-group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+@media only screen and (min-width: 992px) {
+  .input-group {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .input-group .input {
+      max-width: 48%;
+      width: 100%; }
+    .input-group .full {
+      max-width: none;
+      width: 100%; } }
+
+.input {
+  position: relative; }
+  .input label {
+    -ms-flex-align: center;
+        align-items: center;
+    background-color: transparent;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    left: 10px;
+    margin: auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.15s, background-color 0.3s, padding 0.2s 0.2s;
+    z-index: 0; }
+  .input input:focus {
+    border-color: #00ad8f;
+    outline: none; }
+    .input input:focus ~ label {
+      transform: translate(-12px, -25px) scale(0.8);
+      opacity: 1;
+      color: #00ad8f;
+      background-color: white;
+      padding: 0 5px;
+      z-index: 1; }
+
+.textarea label {
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1.5; }
+
+.captcha-notice {
+  font-size: 0.75em;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.submit {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .submit input {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: auto; }
+
 .site-header {
   background-color: #ffffff;
   border-bottom: 5px solid #00ad8f;
@@ -547,7 +656,8 @@ body:not(.home) main {
       grid-row-end: 3; } }
 
 .block {
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  position: relative; }
   @media only screen and (min-width: 992px) {
     .block {
       margin-bottom: 6rem; } }
@@ -619,7 +729,13 @@ body:not(.home) main {
     font-style: italic; }
   @media only screen and (min-width: 992px) {
     .page-title {
+      margin-bottom: 4rem;
       text-align: left; } }
+
+.page-intro {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 675px; }
 
 .cta {
   background-color: #ffffff;
@@ -716,6 +832,66 @@ body:not(.home) main {
     display: grid;
     grid-template: 1fr / 47.5% 47.5%;
     grid-gap: 5%; } }
+
+.portfolio-hero img {
+  width: 100%; }
+
+.portfolio-hero .image {
+  position: relative;
+  margin: 0 auto 4rem; }
+
+.portfolio-hero .portfolio-image-desktop {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-height: 52vw; }
+
+.portfolio-hero .portfolio-image-mobile {
+  bottom: -2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 44vw;
+  max-width: 20vw;
+  overflow: hidden;
+  position: absolute;
+  right: 5vw; }
+
+@media only screen and (min-width: 1200px) {
+  .portfolio-hero {
+    margin-bottom: 8rem; }
+    .portfolio-hero .image {
+      margin-left: 0;
+      max-width: 50%; }
+    .portfolio-hero .portfolio-image-desktop {
+      max-height: 29vw;
+      overflow-y: scroll; }
+    .portfolio-hero .portfolio-image-mobile {
+      right: initial;
+      max-height: 22vw;
+      max-width: 10vw;
+      overflow-y: scroll;
+      left: 5vw; }
+    .portfolio-hero .content {
+      background: white;
+      border-left: 5px solid #00ad8f;
+      bottom: 3vw;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      height: auto;
+      margin: auto;
+      max-height: 280px;
+      overflow: scroll;
+      padding: 2rem;
+      position: absolute;
+      right: 0;
+      width: 55%; } }
+
+@media only screen and (min-width: 1600px) {
+  .portfolio-hero .portfolio-image-desktop {
+    max-height: 465px; }
+  .portfolio-hero .portfolio-image-mobile {
+    max-height: 352px;
+    max-width: 160px;
+    left: 4rem; }
+  .portfolio-hero .content {
+    bottom: 4rem; } }
 
 .btn {
   background-color: #00ad8f;
@@ -1892,6 +2068,10 @@ div.button-group {
 
 .home .logo {
   font-size: 1.55em; }
+
+.contact {
+  background: linear-gradient(rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0.5)), url(/assets/img/content-wireframe.svg) -50% 60%/55% no-repeat, url(/assets/img/content-websites.svg) 150% 66%/60% no-repeat, #f8f8f8;
+  background-attachment: fixed; }
 
 .desktop-only {
   display: none; }
