@@ -378,7 +378,7 @@ form {
   max-width: 675px; }
 
 input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
-  background-color: transparent;
+  background-color: #ffffff;
   border-radius: 5px;
   border: 1px solid rgba(112, 112, 112, 0.5);
   display: block;
@@ -387,6 +387,12 @@ input[type="text"], input[type="number"], input[type="email"], input[type="tel"]
   text-indent: 10px;
   width: 100%;
   z-index: 1; }
+
+input:-ms-input-placeholder {
+  opacity: 0.5; }
+
+input::placeholder {
+  opacity: 0.5; }
 
 textarea {
   border-radius: 5px;
@@ -450,13 +456,14 @@ textarea {
   .input input:focus {
     border-color: #00ad8f;
     outline: none; }
+    .input input:focus:-ms-input-placeholder {
+      opacity: 0; }
+    .input input:focus::placeholder {
+      opacity: 0; }
     .input input:focus ~ label {
-      transform: translate(-12px, -25px) scale(0.8);
+      transform: translate(-12px, -38px) scale(0.8);
       opacity: 1;
-      color: #00ad8f;
-      background-color: white;
-      padding: 0 5px;
-      z-index: 1; }
+      color: #00ad8f; }
 
 .textarea label {
   display: block;
@@ -591,7 +598,11 @@ footer.site-footer {
   text-align: center; }
   @media only screen and (min-width: 992px) {
     footer.site-footer {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+      footer.site-footer p {
+        margin: 0 auto;
+        max-width: 1600px;
+        padding: 0 6rem 0 2rem; } }
 
 body:not(.home) main {
   max-width: 1600px;
@@ -776,55 +787,61 @@ body:not(.home) main {
     .special {
       background: #ffffff url(/assets/img/bg-organic1.svg) 25%/30% no-repeat; } }
 
-.portfolio-card > img {
-  width: 100%; }
-
-.portfolio-card .info p {
-  margin: 0; }
-
-.portfolio-card .info ul {
-  margin: 0;
-  padding: 0 20px; }
-
-@media only screen and (min-width: 992px) {
-  .portfolio-card {
-    display: -ms-grid;
-    display: grid;
-    grid-template: auto / 25% 60% 15%;
-    grid-template-areas: "image content icons";
-    position: relative; }
-    .portfolio-card .info {
-      -ms-flex-align: center;
-          align-items: center;
-      grid-area: content;
-      padding-left: 2rem; }
-      .portfolio-card .info h3 {
-        margin: 1rem 0; }
-    .portfolio-card .icons {
-      -ms-flex-align: end;
-          align-items: flex-end;
-      -ms-flex-direction: column;
-          flex-direction: column;
-      grid-area: icons;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-      padding: 0 1rem 1rem 0; }
-      .portfolio-card .icons img:not(:last-child) {
-        margin-bottom: 1rem;
-        margin-right: 0; }
-    .portfolio-card .button-group {
-      -ms-flex-align: end;
-          align-items: flex-end;
-      bottom: 1rem;
-      grid-area: content;
-      grid-area: image;
-      -ms-flex-pack: center;
-          justify-content: center;
-      left: 0;
-      margin: auto;
-      padding: 0;
-      position: absolute;
-      right: 0; } }
+.portfolio-card {
+  color: #343434; }
+  .portfolio-card > img {
+    width: 100%; }
+  .portfolio-card .image {
+    margin-bottom: 0; }
+  .portfolio-card .icons {
+    margin-bottom: 2rem; }
+  .portfolio-card .info p {
+    margin: 0; }
+  .portfolio-card .info ul {
+    margin: 0;
+    padding: 0 20px; }
+  @media only screen and (min-width: 992px) {
+    .portfolio-card {
+      display: -ms-grid;
+      display: grid;
+      grid-template: auto / 25% 60% 15%;
+      grid-template-areas: "image content icons";
+      position: relative; }
+      .portfolio-card .image {
+        margin: 0; }
+      .portfolio-card .info {
+        -ms-flex-align: center;
+            align-items: center;
+        grid-area: content;
+        padding-left: 2rem; }
+        .portfolio-card .info h3 {
+          margin: 1rem 0; }
+      .portfolio-card .icons {
+        -ms-flex-align: end;
+            align-items: flex-end;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        grid-area: icons;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        padding: 0 1rem 1rem 0;
+        margin-bottom: 0; }
+        .portfolio-card .icons img:not(:last-child) {
+          margin-bottom: 1rem;
+          margin-right: 0; }
+      .portfolio-card .button-group {
+        -ms-flex-align: end;
+            align-items: flex-end;
+        bottom: 1rem;
+        grid-area: content;
+        grid-area: image;
+        -ms-flex-pack: center;
+            justify-content: center;
+        left: 0;
+        margin: auto;
+        padding: 0;
+        position: absolute;
+        right: 0; } }
 
 @media only screen and (min-width: 992px) {
   .portfolio-content {
@@ -892,6 +909,16 @@ body:not(.home) main {
     left: 4rem; }
   .portfolio-hero .content {
     bottom: 4rem; } }
+
+.portfolio-cta {
+  border-top: 5px solid #00ad8f;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 4rem;
+  padding: 2rem; }
+  .portfolio-cta h2:after {
+    right: 0;
+    margin: auto; }
 
 .btn {
   background-color: #00ad8f;
@@ -2072,6 +2099,10 @@ div.button-group {
 .contact {
   background: linear-gradient(rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0.5)), url(/assets/img/content-wireframe.svg) -50% 60%/55% no-repeat, url(/assets/img/content-websites.svg) 150% 66%/60% no-repeat, #f8f8f8;
   background-attachment: fixed; }
+  .contact .site-footer {
+    display: none; }
+  .contact .content {
+    text-align: center; }
 
 .desktop-only {
   display: none; }

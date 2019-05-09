@@ -6,39 +6,43 @@
 {% include 'blocks/pageIntro' %}
 
 <section class="block contact-form">
-  <form action="">
+  <form method="post" action="" accept-charset="UTF-8">
+    {{ csrfInput() }}
+    <input type="hidden" name="action" value="contact-form/send">
+    {{ redirectInput('contact/thanks') }}
+
     <div class="card form-card">
       <h2>Contact Information</h2>
       <div class="input-group">
-        <div class="input full"><input type="text"><label for="">Your Name</label></div>
+        <div class="input full"><input type="text" name="fromName" required placeholder="Your Name"><label for="">Your Name</label></div>
       </div>
 
       <div class="input-group">
-        <div class="input"><input type="text"><label for="">Contact Phone</label></div>
-        <div class="input"><input type="text"><label for="">Contact Email</label></div>
+        <div class="input"><input type="tel" name="message[Phone]"placeholder="Contact Phone"><label for="">Contact Phone</label></div>
+        <div class="input"><input type="email" name="fromEmail" required placeholder="Contact Email"><label for="">Contact Email</label></div>
       </div>
     </div>
 
     <div class="card form-card">
       <h2>Business Information</h2>
       <div class="input-group">
-        <div class="input"><input type="text"><label for="">Business Name</label></div>
-        <div class="input"><input type="text"><label for="">Business Website URL</label></div>
+        <div class="input"><input type="text" name="message[Business Name]" placeholder="Business Name"><label for="">Business Name</label></div>
+        <div class="input"><input type="text" name="message[Business URL]" placeholder="Business Website URL"><label for="">Business Website URL</label></div>
       </div>
     </div>
 
     <div class="card form-card">
       <h2>Additional Information</h2>
       <div class="input-group">
-      <div class="full textarea"><label for="">How did you hear about me?</label><textarea name="" id="" rows="5"></textarea></div>
+      <div class="full textarea"><label for="">How did you hear about me?</label><textarea name="message[Referral]" id="" rows="5"></textarea></div>
       </div>
       <div class="input-group">
-      <div class="full textarea"><label for="">Share an introduction to your idea or business, or share any additional comments or questions.</label><textarea name="" id="" rows="5"></textarea></div>
+      <div class="full textarea"><label for="">Share an introduction to your idea or business, or share any additional comments or questions.</label><textarea name="message[Additional Comments]" id="" rows="5"></textarea></div>
       </div>
     </div>
 
     <div class="submit">
-      <p class="captcha-notice">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+      {# <p class="captcha-notice">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p> #}
       <input type="submit" class="btn" value="Submit Form">
     </div>
   </form>
