@@ -8,7 +8,6 @@
 /.env.*
 craft
 craft.bat
-/config/project.yaml
 
 
 ### CRAFT UPDATE FILES
