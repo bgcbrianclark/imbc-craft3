@@ -754,11 +754,12 @@ body:not(.home) main {
   padding: 4rem 0; }
   .cta h2 {
     font-style: italic; }
-  @media only screen and (min-width: 992px) {
+  .cta .image {
+    display: none; }
+  @media only screen and (min-width: 1200px) {
     .cta {
       background-color: transparent; }
       .cta .container {
-        border-right: 10px solid #00ad8f;
         max-width: 80%;
         background-color: #ffffff;
         display: -ms-grid;
@@ -777,6 +778,9 @@ body:not(.home) main {
           -ms-flex-direction: column;
               flex-direction: column; }
         .cta .container .image {
+          background-color: #ffffff;
+          border-right: 10px solid #00ad8f;
+          display: block;
           -ms-grid-column: 3;
               grid-column: 3; } }
 
