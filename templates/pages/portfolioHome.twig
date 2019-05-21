@@ -77,7 +77,11 @@
               <div class="button-group"><a href="{{ block.ctaLink.getUrl() }}" class="btn">{{ block.ctaLink.getText() }}</a></div>
             </div>
             <div class="image desktop-only">
-              <img src="/assets/img/content-confused.svg" alt="">
+              {% set img = block.image.one() %}
+              {% set transform = craft.imager.transformImage(img, {
+                width: 400
+              })%}
+              <img src="{{ transform.url }}" alt="{{ img.altText ?? img.title }}">
             </div>
           </div>
         </section>

@@ -1,4 +1,4 @@
-dateModified: 1557365186
+dateModified: 1558400089
 email:
   fromEmail: me@iambrianclark.com
   fromName: iambrianclark
@@ -640,7 +640,7 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 2.0.10
+    schemaVersion: 2.0.11
   typedlinkfield:
     edition: standard
     enabled: true
@@ -742,6 +742,13 @@ sections:
                   f206aebe-b165-4567-a369-dae3c8a3cf9d:
                     required: false
                     sortOrder: 2
+              -
+                name: SEO
+                sortOrder: 2
+                fields:
+                  bb03226a-b4b6-4f80-a9f7-c3e9d42ac13b:
+                    required: false
+                    sortOrder: 1
       59592247-07d6-4823-a55c-817c03c45084:
         name: 'Contact Success'
         handle: contactSuccess
@@ -762,6 +769,33 @@ sections:
                   f206aebe-b165-4567-a369-dae3c8a3cf9d:
                     required: false
                     sortOrder: 2
+      ab419d56-fea5-461b-9228-308eee1f3563:
+        name: 'Services Home'
+        handle: servicesHome
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 5
+        fieldLayouts:
+          ff397d15-57c5-4276-b9c5-f58286abd5f4:
+            tabs:
+              -
+                name: Common
+                sortOrder: 1
+                fields:
+                  af46cefa-cbe3-4dbe-bcc6-f8a815feefd8:
+                    required: false
+                    sortOrder: 1
+                  f206aebe-b165-4567-a369-dae3c8a3cf9d:
+                    required: false
+                    sortOrder: 2
+              -
+                name: SEO
+                sortOrder: 2
+                fields:
+                  bb03226a-b4b6-4f80-a9f7-c3e9d42ac13b:
+                    required: false
+                    sortOrder: 1
   5fcb921d-cd23-4d08-b9ad-5bcff90b6bda:
     name: Portfolio
     handle: portfolioDetail
