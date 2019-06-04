@@ -1,4 +1,4 @@
-dateModified: 1558400089
+dateModified: 1559613229
 email:
   fromEmail: me@iambrianclark.com
   fromName: iambrianclark
@@ -640,7 +640,7 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 2.0.11
+    schemaVersion: 2.0.12
   typedlinkfield:
     edition: standard
     enabled: true
@@ -781,6 +781,33 @@ sections:
             tabs:
               -
                 name: Common
+                sortOrder: 1
+                fields:
+                  af46cefa-cbe3-4dbe-bcc6-f8a815feefd8:
+                    required: false
+                    sortOrder: 1
+                  f206aebe-b165-4567-a369-dae3c8a3cf9d:
+                    required: false
+                    sortOrder: 2
+              -
+                name: SEO
+                sortOrder: 2
+                fields:
+                  bb03226a-b4b6-4f80-a9f7-c3e9d42ac13b:
+                    required: false
+                    sortOrder: 1
+      ba4fc2bf-ecb9-4849-b25f-dc4a489380d2:
+        name: 'General Page'
+        handle: generalPage
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 6
+        fieldLayouts:
+          1567edd5-f03e-49d4-b5ac-b8cb8f730784:
+            tabs:
+              -
+                name: Content
                 sortOrder: 1
                 fields:
                   af46cefa-cbe3-4dbe-bcc6-f8a815feefd8:
