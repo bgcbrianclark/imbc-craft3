@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c3516ef594bb8a1ae73cf15891c74ab",
+    "content-hash": "3996747cb875348d01c94c695ac833ed",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -470,11 +470,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.27",
+            "version": "3.1.28",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d5b2aa25fa2e7bb7527fca807b5229e99ea42218",
-                "reference": "d5b2aa25fa2e7bb7527fca807b5229e99ea42218",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/310a7d295eabe7b3691cb328efd9099d5dca29f5",
+                "reference": "310a7d295eabe7b3691cb328efd9099d5dca29f5",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +505,7 @@
                 "true/punycode": "^2.1.0",
                 "twig/twig": "~2.8.1",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.17.0",
+                "yiisoft/yii2": "~2.0.19.0",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0",
@@ -550,15 +550,15 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2019-05-14T18:43:31+00:00"
+            "time": "2019-05-21T19:09:25+00:00"
         },
         {
             "name": "craftcms/contact-form",
-            "version": "2.2.4",
+            "version": "2.2.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/f606446dd9f86cb98dd66ec2c7df081cdff73c7a",
-                "reference": "f606446dd9f86cb98dd66ec2c7df081cdff73c7a",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/a645df88d757d620bc29bc6dd3d748374b791093",
+                "reference": "a645df88d757d620bc29bc6dd3d748374b791093",
                 "shasum": ""
             },
             "require": {
@@ -602,7 +602,7 @@
                 "docs": "https://github.com/craftcms/contact-form/blob/v2/README.md",
                 "rss": "https://github.com/craftcms/contact-form/commits/v2.atom"
             },
-            "time": "2019-04-03T16:45:22+00:00"
+            "time": "2019-05-31T22:56:39+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -652,11 +652,11 @@
         },
         {
             "name": "craftcms/plugin-installer",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/2b75646ce7091d24ef053e8d0b45f89cab04b16f",
-                "reference": "2b75646ce7091d24ef053e8d0b45f89cab04b16f",
+                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/57acaa38b629fe2fea20910aa461f2a19fc81cb9",
+                "reference": "57acaa38b629fe2fea20910aa461f2a19fc81cb9",
                 "shasum": ""
             },
             "require": {
@@ -671,7 +671,6 @@
                     "craft\\composer\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -684,7 +683,7 @@
                 "installer",
                 "plugin"
             ],
-            "time": "2017-07-25T13:26:24+00:00"
+            "time": "2019-05-22T17:54:27+00:00"
         },
         {
             "name": "craftcms/redactor",
@@ -963,21 +962,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/709f21f92707308cdf8f9bcfa1af4cb26586521e",
-                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c26463ff9241f27907112fbcd0c86fa670cfef98",
+                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "^1.0.1",
                 "php": ">= 5.5"
-            },
-            "require-dev": {
-                "dominicsayers/isemail": "dev-master",
-                "phpunit/phpunit": "^4.8.35||^5.7||^6.0",
-                "satooshi/php-coveralls": "^1.0.1"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -993,7 +987,6 @@
                     "Egulias\\EmailValidator\\": "EmailValidator"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1011,7 +1004,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-12-04T22:38:24+00:00"
+            "time": "2019-05-16T22:02:54+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -2071,11 +2064,11 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.51",
+            "version": "1.0.52",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/755ba7bf3fb9031e6581d091db84d78275874396",
-                "reference": "755ba7bf3fb9031e6581d091db84d78275874396",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c5a5097156387970e6f0ccfcdf03f752856f3391",
+                "reference": "c5a5097156387970e6f0ccfcdf03f752856f3391",
                 "shasum": ""
             },
             "require": {
@@ -2141,7 +2134,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-03-30T13:22:34+00:00"
+            "time": "2019-05-20T20:21:14+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -4017,11 +4010,11 @@
         },
         {
             "name": "verbb/super-table",
-            "version": "2.1.19",
+            "version": "2.1.20",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/bc7c2eae0d81eb90d7d5020df4ec2276b6fb8be5",
-                "reference": "bc7c2eae0d81eb90d7d5020df4ec2276b6fb8be5",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/5be146e3f741f9e52145cf773cba2753214e6d36",
+                "reference": "5be146e3f741f9e52145cf773cba2753214e6d36",
                 "shasum": ""
             },
             "require": {
@@ -4065,7 +4058,7 @@
                 "docs": "https://github.com/verbb/super-table",
                 "rss": "https://github.com/verbb/super-table/commits/v2.atom"
             },
-            "time": "2019-05-11T06:01:07+00:00"
+            "time": "2019-05-21T10:42:31+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4160,16 +4153,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.17",
+            "version": "2.0.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b56159228c3b4990e38cf41ddd69af27ab015bea",
-                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3e74c7338dd83cea6ffc6f5c25202b9f2f271f89",
+                "reference": "3e74c7338dd83cea6ffc6f5c25202b9f2f271f89",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-                "bower-asset/jquery": "3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -4250,7 +4243,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-03-22T21:26:26+00:00"
+            "time": "2019-05-21T16:01:16+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
