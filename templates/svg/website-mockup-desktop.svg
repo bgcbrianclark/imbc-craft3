@@ -1,7 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="181.254" height="249.652" viewBox="0 0 181.254 249.652">
   <g id="Group_116" data-name="Group 116" transform="translate(-1364 -378)">
+    <g id="Group_112" data-name="Group 112" transform="translate(1364 378)">
+      <g id="Group_113" data-name="Group 113" transform="translate(110.12 6.156)">
+        <rect id="Rectangle_948" data-name="Rectangle 948" width="8.892" height="1.368" transform="translate(61.558)" fill="#343434"/>
+        <rect id="Rectangle_952" data-name="Rectangle 952" width="8.892" height="1.368" transform="translate(20.519)" fill="#343434"/>
+        <rect id="Rectangle_950" data-name="Rectangle 950" width="8.892" height="1.368" transform="translate(41.039)" fill="#343434"/>
+        <rect id="Rectangle_951" data-name="Rectangle 951" width="8.892" height="1.368" fill="#343434"/>
+      </g>
+      <circle id="Ellipse_32" data-name="Ellipse 32" cx="6.84" cy="6.84" r="6.84" fill="#0078ad"/>
+    </g>
     <rect id="Rectangle_937" data-name="Rectangle 937" width="180.57" height="72.502" rx="3" transform="translate(1364 401.255)" fill="#00ad8f"/>
-    <rect id="Rectangle_953" data-name="Rectangle 953" width="180.57" height="13.68" rx="3" transform="translate(1364 613.972)" fill="#00ad8f"/>
+
     <g id="Group_109" data-name="Group 109" transform="translate(1364 490.856)">
       <rect id="Rectangle_938" data-name="Rectangle 938" width="84.813" height="51.298" rx="3" transform="translate(0 0)" fill="#0078ad"/>
       <g id="Group_108" data-name="Group 108" transform="translate(96.441 0)">
@@ -21,14 +30,6 @@
       </g>
       <circle id="Ellipse_31" data-name="Ellipse 31" cx="19.151" cy="19.151" r="19.151" transform="translate(119.696 0)" fill="#00ad8f"/>
     </g>
-    <g id="Group_112" data-name="Group 112" transform="translate(1364 378)">
-      <g id="Group_113" data-name="Group 113" transform="translate(110.12 6.156)">
-        <rect id="Rectangle_948" data-name="Rectangle 948" width="8.892" height="1.368" transform="translate(61.558)" fill="#343434"/>
-        <rect id="Rectangle_952" data-name="Rectangle 952" width="8.892" height="1.368" transform="translate(20.519)" fill="#343434"/>
-        <rect id="Rectangle_950" data-name="Rectangle 950" width="8.892" height="1.368" transform="translate(41.039)" fill="#343434"/>
-        <rect id="Rectangle_951" data-name="Rectangle 951" width="8.892" height="1.368" fill="#343434"/>
-      </g>
-      <circle id="Ellipse_32" data-name="Ellipse 32" cx="6.84" cy="6.84" r="6.84" fill="#0078ad"/>
-    </g>
+    <rect id="Rectangle_953" data-name="Rectangle 953" width="180.57" height="13.68" rx="3" transform="translate(1364 613.972)" fill="#00ad8f"/>
   </g>
 </svg>
