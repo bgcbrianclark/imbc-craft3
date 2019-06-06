@@ -666,6 +666,9 @@ body:not(.home) main {
     .grid-row-start-2.grid-row-end-3 {
       grid-row-end: 3; } }
 
+.rte p {
+  margin-bottom: 3rem; }
+
 .btn {
   background-color: #00ad8f;
   border-radius: 5px;
