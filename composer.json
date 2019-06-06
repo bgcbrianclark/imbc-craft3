@@ -1,7 +1,7 @@
 {
   "require": {
     "aelvan/imager": "v2.1.10",
-    "craftcms/cms": "3.1.28",
+    "craftcms/cms": "3.1.29",
     "craftcms/contact-form": "2.2.5",
     "craftcms/redactor": "2.3.3.2",
     "ether/seo": "^3.5",
