@@ -1,4 +1,4 @@
-dateModified: 1559613229
+dateModified: 1559869609
 email:
   fromEmail: me@iambrianclark.com
   fromName: iambrianclark
@@ -17,6 +17,8 @@ fieldGroups:
     name: SEO
   ef2c04b2-ef85-473a-8bf7-c37b2e9ee772:
     name: Assets
+  90a9a590-511b-40a9-9518-72014fff283a:
+    name: Services
 fields:
   053fd583-bbbf-4eba-8915-75291c6e71e7:
     name: 'Portfolio Content Blocks'
@@ -222,6 +224,21 @@ fields:
       selectionLabel: ''
     contentColumnType: string
     fieldGroup: 5601734e-61e2-47b1-a337-9db6a1dc2985
+  1a188e53-1c73-452d-b3d0-50e67a307cfc:
+    name: Services
+    handle: services
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Matrix
+    settings:
+      minBlocks: ''
+      maxBlocks: ''
+      contentTable: '{{%matrixcontent_services}}'
+      localizeBlocks: false
+    contentColumnType: string
+    fieldGroup: 90a9a590-511b-40a9-9518-72014fff283a
 matrixBlockTypes:
   7ccb6fd5-0847-4adf-adbe-cc84a726c031:
     field: 053fd583-bbbf-4eba-8915-75291c6e71e7
@@ -590,6 +607,90 @@ matrixBlockTypes:
               f963f9d9-7f9c-451d-9bab-5529f69bcd02:
                 required: true
                 sortOrder: 3
+  3cba1fda-b796-49d8-b0e9-9dba2074d67e:
+    field: 1a188e53-1c73-452d-b3d0-50e67a307cfc
+    name: 'Service Card'
+    handle: serviceCard
+    sortOrder: 1
+    fields:
+      0a5aa919-99de-4d8a-b6dc-5cb75314cc79:
+        name: 'Service Category'
+        handle: serviceCategory
+        instructions: ''
+        searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
+        settings:
+          placeholder: ''
+          code: ''
+          multiline: ''
+          initialRows: '4'
+          charLimit: ''
+          columnType: text
+        contentColumnType: text
+        fieldGroup: null
+      aa3e5615-8bb1-45b7-8804-bcd6e9f57808:
+        name: 'Service List'
+        handle: serviceList
+        instructions: ''
+        searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\Table
+        settings:
+          addRowLabel: 'Add a Service'
+          maxRows: ''
+          minRows: ''
+          columns:
+            col1:
+              heading: Service
+              handle: service
+              width: ''
+              type: singleline
+          defaults:
+            -
+              col1: ''
+          columnType: text
+        contentColumnType: text
+        fieldGroup: null
+      96008883-6484-4e73-8f16-ccd3ac19a46f:
+        name: 'Body Text'
+        handle: bodyText
+        instructions: ''
+        searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\redactor\Field
+        settings:
+          redactorConfig: Standard.json
+          purifierConfig: ''
+          cleanupHtml: true
+          removeInlineStyles: '1'
+          removeEmptyTags: '1'
+          removeNbsp: '1'
+          purifyHtml: '1'
+          columnType: text
+          availableVolumes: '*'
+          availableTransforms: '*'
+        contentColumnType: text
+        fieldGroup: null
+    fieldLayouts:
+      dab5be3f-1252-4793-abc0-d2e08d424c84:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              0a5aa919-99de-4d8a-b6dc-5cb75314cc79:
+                required: true
+                sortOrder: 1
+              aa3e5615-8bb1-45b7-8804-bcd6e9f57808:
+                required: false
+                sortOrder: 2
+              96008883-6484-4e73-8f16-ccd3ac19a46f:
+                required: false
+                sortOrder: 3
 plugins:
   contact-form:
     edition: standard
@@ -789,6 +890,9 @@ sections:
                   f206aebe-b165-4567-a369-dae3c8a3cf9d:
                     required: false
                     sortOrder: 2
+                  1a188e53-1c73-452d-b3d0-50e67a307cfc:
+                    required: false
+                    sortOrder: 3
               -
                 name: SEO
                 sortOrder: 2

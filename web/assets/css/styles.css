@@ -667,7 +667,7 @@ body:not(.home) main {
       grid-row-end: 3; } }
 
 .rte p {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .btn {
   background-color: #00ad8f;
@@ -2113,6 +2113,9 @@ div.button-group {
 .contact .content {
   margin: 0 auto;
   text-align: center; }
+
+.services .card {
+  margin-bottom: 4rem; }
 
 .desktop-only {
   display: none; }

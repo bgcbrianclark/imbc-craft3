@@ -2,48 +2,27 @@
 
 {% block main %}
 
-{% include 'blocks/pageTitle' %}
-{% include 'blocks/pageIntro' %}
+  {% include 'blocks/pageTitle' %}
+  {% include 'blocks/pageIntro' %}
 
-{#  TODO: Make Services Dynamic. Add logolist for technologies I use #}
-<section class="block services ">
-  <div class="container card">
-    <div class="content rte">
-      <div class="block">
-        <h2>Web</h2>
-        <ul>
-          <li>Responsive Website Design and Development</li>
-          <li>B2B and B2C E-Commerce Solutions</li>
-          <li>Wireframing and Prototyping</li>
-          <li>Web Hosting</li>
-          <li>Domain Registration</li>
-        </ul>
+  {#  TODO: Add logolist for technologies I use #}
+  <section class="block services ">
+    {% for block in entry.services.all() %}
+      <div class="container card">
+        <div class="content rte">
 
-        <h3>Technologies I Use</h3>
-        <ul>
-          <li>Craft CMS</li>
-          <li><a href="/services/shopify">Shopify Hosted E-Commerce</a></li>
-        </ul>
+          <h2>{{ block.serviceCategory }}</h2>
+          <p>
+            <ul>
+              {% for service in block.serviceList %}
+                <li>{{ service.service }}</li>
+              {% endfor %}
+            </ul>
+          </p>
+          {{ block.bodyText }}
+        </div>
       </div>
-
-      <div class="block">
-        <h2>Consulting</h2>
-        <ul>
-          <li>Brand Design and Marketing Strategy</li>
-          <li>General Website Optimization</li>
-          <li>Search Engine Optimization</li>
-          <li>Pay Per Click and Digital Marketing</li>
-        </ul>
-      </div>
-
-      <div class="block">
-        <p>If you have any questions about the above services or would like to get a free estimate for your own business, please <a href="/contact">contact me</a>!</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
+    {% endfor %}
+  </section>
 
 {% endblock %}
