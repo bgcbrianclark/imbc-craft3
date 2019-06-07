@@ -709,7 +709,7 @@ div.button-group {
   z-index: -1; }
   @media only screen and (min-width: 992px) {
     .svg-container {
-      opacity: 0.05; } }
+      opacity: 0.1; } }
 
 .code-bg rect {
   animation: rect-clip-path 0.1s ease-in-out;
