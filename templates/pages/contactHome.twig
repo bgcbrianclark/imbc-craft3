@@ -43,6 +43,7 @@
 
     <div class="submit">
       {# <p class="captcha-notice">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p> #}
+      {{ craft.contactFormExtensions.recaptcha | raw }}
       <input type="submit" class="btn" value="Submit Form">
     </div>
   </form>
