@@ -1,14 +1,14 @@
 {
   "require": {
-    "aelvan/imager": "v2.1.10",
-    "craftcms/cms": "3.1.29",
-    "craftcms/contact-form": "2.2.5",
-    "craftcms/redactor": "2.3.3.2",
+    "aelvan/imager": "^v2.1.10",
+    "craftcms/cms": "^3.1.29",
+    "craftcms/contact-form": "^2.2.5",
+    "craftcms/redactor": "^2.3.3.2",
     "ether/seo": "^3.5",
-    "rias/craft-contact-form-extensions": "1.1.6",
-    "sebastianlenz/linkfield": "1.0.19",
-    "verbb/field-manager": "2.1.0",
-    "verbb/super-table": "2.1.20",
+    "rias/craft-contact-form-extensions": "^1.1.6",
+    "sebastianlenz/linkfield": "^1.0.19",
+    "verbb/field-manager": "^2.1.0",
+    "verbb/super-table": "^2.1.20",
     "vlucas/phpdotenv": "^2.4.0"
   },
   "autoload": {
