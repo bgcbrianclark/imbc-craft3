@@ -1,0 +1,138 @@
+form {
+  margin: 0 auto;
+  max-width: 675px;
+}
+
+input {
+  &[type="text"],
+  &[type="number"],
+  &[type="email"],
+  &[type="tel"] {
+    background-color: $clr-white;
+    border-radius: 5px;
+    border: 1px solid rgba(112, 112, 112, 0.5);
+    display: block;
+    min-height: 50px;
+    position: relative;
+    text-indent: 10px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid rgba(112, 112, 112, 0.5);
+  display: block;
+  min-height: 50px;
+  padding: 1rem;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    border-color: $clr1;
+  }
+}
+
+.form-card {
+  margin-bottom: 2.75rem;
+
+  h2 {
+    margin-bottom: 2rem;
+    &:after {
+      display: none;
+    }
+  }
+
+  @include lg-screen() {
+    padding: 2rem;
+  }
+}
+
+.input-group {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  @include lg-screen() {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .input {
+      max-width: 48%;
+      width: 100%;
+    }
+    .full {
+      max-width: none;
+      width: 100%;
+    }
+  }
+}
+
+.input {
+  position: relative;
+
+  label {
+    align-items: center;
+    background-color: transparent;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 10px;
+    margin: auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.15s, background-color 0.3s,
+      padding 0.2s 0.2s;
+    z-index: 0;
+  }
+
+  input:focus {
+    border-color: $clr1;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    & ~ label {
+      transform: translate(-12px, -38px) scale(0.8);
+      opacity: 1;
+      color: #00ad8f;
+    }
+  }
+}
+
+.textarea {
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+}
+
+.captcha-notice {
+  font-size: 0.75em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.submit {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  input {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: auto;
+  }
+}

@@ -1,0 +1,62 @@
+/** MIXINS **/
+/* Breakpoints */
+$scr-sm: 375px;
+$scr-md: 768px;
+$scr-lg: 992px;
+$scr-xl: 1200px;
+$scr-wide: 1600px;
+
+@mixin sm-landscape-screen() {
+  @media only screen and (max-height: 800px) {
+    @content;
+  }
+}
+
+@mixin sm-screen() {
+  @media only screen and (min-width: $scr-sm) {
+    @content;
+  }
+}
+@mixin md-screen() {
+  @media only screen and (min-width: $scr-md) {
+    @content;
+  }
+}
+@mixin lg-screen() {
+  @media only screen and (min-width: $scr-lg) {
+    @content;
+  }
+}
+@mixin xl-screen() {
+  @media only screen and (min-width: $scr-xl) {
+    @content;
+  }
+}
+@mixin wide-screen() {
+  @media only screen and (min-width: $scr-wide) {
+    @content;
+  }
+}
+
+@mixin desktop-screen() {
+  @media only screen and (min-width: 1200px) and (min-height: 850px) {
+    @content;
+  }
+}
+
+/** STRUCTURE VARS **/
+$containerWidth: calc(992px + 4rem);
+
+/** COLOR VARS **/
+$clr-overlay: rgba(31, 37, 61, 0.8);
+
+$clr1: #00ad8f; // green
+$clr2: #0078ad; // blue
+
+$clr-text: #343434;
+$clr-light: #f8f8f8;
+$clr-white: #ffffff;
+
+/** TEXT VARS **/
+$bodyFontFamily: "open-sans", Helvetica, Arial, sans-serif;
+$headerFontFamily: "minion-pro", serif;

@@ -22,7 +22,6 @@ web/imager/*
 
 
 ### DEVELOPMENT FILES
-/source
 /.ftpconfig
 /comps
 /gulpfile.js

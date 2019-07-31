@@ -1,0 +1,29 @@
+.home {
+  .logo {
+    font-size: 1.55em;
+  }
+}
+
+.contact {
+  // @include lg-screen() {
+  //   background: linear-gradient(hsla(0, 0%, 97%, 0.5), hsla(0, 0%, 97%, 0.5)),
+  //     url(/assets/img/content-wireframe.svg) -50% 60%/55% no-repeat,
+  //     url(/assets/img/content-websites.svg) 150% 66%/60% no-repeat, $clr-light;
+  //   background-attachment: fixed;
+  // }
+
+  .site-footer {
+    display: none;
+  }
+
+  .content {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.services {
+  .card {
+    margin-bottom: 4rem;
+  }
+}

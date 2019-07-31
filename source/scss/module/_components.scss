@@ -1,0 +1,117 @@
+.rte {
+  p {
+    margin-bottom: 2rem;
+  }
+}
+.btn {
+  background-color: #00ad8f;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0.25rem 2rem;
+
+  &.alt {
+    background-color: white;
+    border: 1px solid #00ad8f;
+    color: #00ad8f;
+  }
+}
+
+div.button-group {
+  padding: 1rem 0;
+  display: flex;
+
+  .btn {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.logo {
+  color: $clr1;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.svg-container {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: auto;
+  opacity: 0.1;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  @include lg-screen() {
+    opacity: 0.1;
+  }
+}
+.code-bg {
+  rect {
+    animation: rect-clip-path 0.1s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  @for $i from 1 through 363 {
+    rect:nth-child(#{$i}) {
+      animation-delay: 0.05s * $i;
+    }
+  }
+}
+
+.image,
+.content {
+  margin-bottom: 2rem;
+
+  @include lg-screen() {
+    margin-bottom: 0;
+  }
+}
+
+.shadow {
+  picture,
+  img {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.content {
+  .grid-2 & {
+    @include lg-screen() {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.card {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include lg-screen() {
+    background-color: $clr-white;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0;
+
+  img {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

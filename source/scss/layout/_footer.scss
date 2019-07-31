@@ -1,0 +1,18 @@
+footer.site-footer {
+  border-bottom: 5px solid $clr1;
+  color: #707070;
+  font-size: 0.8em;
+  margin-bottom: 71px;
+  padding: 1rem 0 0.5rem;
+  text-align: center;
+
+  @include lg-screen() {
+    margin-bottom: 0;
+
+    p {
+      margin: 0 auto;
+      max-width: 1600px;
+      padding: 0 6rem 0 2rem;
+    }
+  }
+}

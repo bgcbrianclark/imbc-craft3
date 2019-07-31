@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  background-color: $clr-light;
+  color: $clr-text;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $clr2;
+  text-decoration: none;
+}
+
+/** TEXT RULES **/
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,700");
+
+body {
+  font: 300 18px/2.22 "Muli", Helvetica, Arial, sans-serif;
+  line-height: 2.22;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 4rem;
+  position: relative;
+
+  &:after {
+    width: 50px;
+    height: 4px;
+    background-color: $clr1;
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+  }
+}
+
+h3 {
+  color: $clr1;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 300;
+  margin-top: 0;
+}
+
+img,
+picture {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+picture img,
+picture source {
+  width: 100%;
+}
