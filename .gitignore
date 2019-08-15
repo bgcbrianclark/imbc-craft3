@@ -11,6 +11,7 @@ craft.bat
 
 
 ### CRAFT UPDATE FILES
+/config/project.yaml
 /vendor/*
 /storage/*
 /node_modules/*
