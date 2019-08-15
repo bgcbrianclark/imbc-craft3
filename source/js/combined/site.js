@@ -36,3 +36,20 @@ function getScrollPosition() {
     headerNav.classList.remove("active");
   }
 }
+
+// Mobile Social Button / Contact Nav function
+function toggleContactMenu() {
+  var nav = document.querySelector(".contact-nav"),
+    navUl = nav.querySelector("ul");
+
+  if (nav.classList.contains("menu--open")) {
+    nav.classList.remove("menu--open");
+  } else {
+    nav.classList.add("menu--open");
+  }
+}
+
+var navBtn = document.querySelector(".contactToggle");
+navBtn.addEventListener("click", function() {
+  toggleContactMenu();
+});

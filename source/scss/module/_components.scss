@@ -55,6 +55,9 @@ div.button-group {
   }
 }
 .code-bg {
+  min-width: 100%;
+  min-height: 100%;
+
   rect {
     animation: rect-clip-path 0.1s ease-in-out;
     animation-fill-mode: both;

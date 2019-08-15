@@ -21,7 +21,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 50%;
 
     ul {
       align-items: center;
@@ -33,7 +32,73 @@
       width: 100%;
 
       li a {
+        align-items: center;
         color: $clr-text;
+        display: flex;
+        justify-content: center;
+        min-height: 48px;
+        min-width: 48px;
+      }
+    }
+  }
+
+  .main-nav {
+    width: 85%;
+  }
+
+  .contact-nav {
+    width: 15%;
+    z-index: 2;
+
+    button.contactToggle {
+      background-color: transparent;
+      border: none;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      min-height: 48px;
+      min-width: 48px;
+    }
+    ul {
+      background: transparent;
+      border-top: 5px solid $clr1;
+      bottom: 80px;
+      border-left: 1px solid $clr-light;
+      border-right: 1px solid $clr-light;
+      flex-direction: column;
+      min-width: 48px;
+      opacity: 0;
+      position: absolute;
+      right: -18px;
+      width: auto;
+      transform: scale(0.8);
+      transition: transform 0.3s ease-in-out, background-color 0.2s 0.3s,
+        opacity 0.1s 0.15s;
+      z-index: 1;
+
+      li {
+        opacity: 0;
+        transition: opacity 0.2s;
+
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            transition-delay: ((0.1s * $i) + 0.5s);
+          }
+        }
+      }
+    }
+
+    &.menu--open {
+      ul {
+        background-color: $clr-white;
+        opacity: 1;
+        transform: none;
+        right: 18px;
+
+        li {
+          opacity: 1;
+        }
       }
     }
   }
@@ -91,14 +156,28 @@
       grid-row: 2;
       margin: auto;
 
-      ul li {
-        min-width: 20px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
+      button.contactToggle {
+        display: none;
+      }
 
-        &:not(:last-child) {
-          margin-bottom: 2rem;
+      ul {
+        background-color: transparent;
+        border: none;
+        opacity: 1;
+        transform: none;
+        right: 1rem;
+        bottom: initial;
+
+        li {
+          min-width: 20px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          opacity: 1;
+
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
         }
       }
     }
