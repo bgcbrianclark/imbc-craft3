@@ -1,0 +1,62 @@
+// Hero SVG
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+$base-delay: 1s;
+
+.hero__website-mockup--desktop {
+  width: 250px;
+
+  .st0,
+  .st1 {
+    transition: opacity 0.15s;
+  }
+  g {
+  }
+
+  #nav,
+  #logo,
+  #hero,
+  #content1-image,
+  #content1-text,
+  #content2-text,
+  #content2-btn,
+  #content2-image {
+    animation: fadeUp ease-in-out 0.5s;
+    animation-fill-mode: both;
+    transform-origin: center;
+  }
+
+  #logo {
+    animation-delay: ($base-delay + 1.5s);
+  }
+  #nav {
+    animation-delay: ($base-delay + 3s);
+  }
+  #hero {
+    animation-delay: ($base-delay + 6s);
+  }
+  #content1-image {
+    animation-delay: ($base-delay + 8s);
+  }
+  #content1-text {
+    animation-delay: ($base-delay + 10s);
+  }
+  #content2-text {
+    animation-delay: ($base-delay + 12s);
+  }
+  #content2-btn {
+    animation-delay: ($base-delay + 12.5s);
+  }
+  #content2-image {
+    animation-delay: ($base-delay + 4s);
+  }
+}
