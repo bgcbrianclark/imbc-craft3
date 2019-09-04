@@ -4,13 +4,15 @@
     opacity: 0;
     transform: translateY(20px);
   }
-  100% {
+  90% {
     opacity: 1;
+  }
+  100% {
     transform: none;
   }
 }
 
-$base-delay: 1s;
+$base-delay: 0.5s;
 
 .hero__website-mockup--desktop {
   width: 250px;
@@ -19,44 +21,41 @@ $base-delay: 1s;
   .st1 {
     transition: opacity 0.15s;
   }
-  g {
-  }
 
-  #nav,
-  #logo,
-  #hero,
-  #content1-image,
-  #content1-text,
-  #content2-text,
-  #content2-btn,
-  #content2-image {
-    animation: fadeUp ease-in-out 0.5s;
+  path {
+    animation: fadeUp 0.5s cubic-bezier(0.42, 0, 0.08, 1.01);
     animation-fill-mode: both;
     transform-origin: center;
+
+    @for $i from 1 through 8 {
+      &:nth-of-type(#{$i}) {
+        animation-delay: $base-delay + ($i * 0.25s);
+      }
+    }
   }
 
-  #logo {
-    animation-delay: ($base-delay + 1.5s);
-  }
-  #nav {
-    animation-delay: ($base-delay + 3s);
-  }
-  #hero {
-    animation-delay: ($base-delay + 6s);
-  }
-  #content1-image {
-    animation-delay: ($base-delay + 8s);
-  }
-  #content1-text {
-    animation-delay: ($base-delay + 10s);
-  }
-  #content2-text {
-    animation-delay: ($base-delay + 12s);
-  }
-  #content2-btn {
-    animation-delay: ($base-delay + 12.5s);
-  }
-  #content2-image {
-    animation-delay: ($base-delay + 4s);
-  }
+  // #logo {
+  //   animation-delay: ($base-delay + 0.5s);
+  // }
+  // #nav {
+  //   animation-delay: ($base-delay + 1.5s);
+  // }
+  // #hero {
+  //   animation-delay: ($base-delay + 3s);
+  // }
+  // #content1-image {
+  //   animation-delay: ($base-delay + 4s);
+  // }
+  // #content1-text {
+  //   animation-delay: ($base-delay + 6s);
+  // }
+  // #content2-text {
+  //   animation-delay: ($base-delay + 7s);
+  // }
+  // #content2-btn {
+  //   animation-delay: ($base-delay + 7.25s);
+  // }
+  // #content2-image {
+  //   animation-delay: ($base-delay + 8.5s);
+  // }
 }
