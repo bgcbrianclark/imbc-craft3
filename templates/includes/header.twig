@@ -1,10 +1,12 @@
 <header class="site-header">
   <nav class="main-nav">
     <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/work">Work</a></li>
-      <li><a href="/contact">Contact</a></li>
+      {% macro is_active(segment) %}{% if craft.request.firstSegment == segment %}active{% endif %}{% endmacro %}
+
+      <li><a href="{{ url('about') }}" class="{{ _self.is_active('about') }}">About</a></li>
+      <li><a href="{{ url('services') }}" class="{{ _self.is_active('services') }}">Services</a></li>
+      <li><a href="{{ url('work') }}" class="{{ _self.is_active('work') }}">Work</a></li>
+      <li><a href="{{ url('contact') }}" class="{{ _self.is_active('contact') }}">Contact</a></li>
     </ul>
   </nav>
   <nav class="contact-nav">
