@@ -1,11 +1,11 @@
 .block {
   margin-bottom: 5rem;
   position: relative;
-
   @include lg-screen() {
     margin-bottom: 6rem;
   }
 }
+
 .hero {
   // overflow: hidden;
   z-index: 1;
@@ -30,10 +30,12 @@
           font-size: 29px;
           font-weight: 600;
         }
+
         &:nth-child(2) {
           font-size: 47px;
           font-weight: 200;
         }
+
         &:last-child {
           font-size: 50px;
           font-weight: 400;
@@ -44,11 +46,11 @@
 
     & > div {
       text-align: center;
+
       img {
         margin: 0 auto;
       }
     }
-
     @include lg-screen() {
       margin: 0 auto 8rem;
       max-width: calc(992px + 4rem);
@@ -85,12 +87,12 @@
   p {
     font-style: italic;
   }
-
   @include lg-screen() {
     margin-bottom: 4rem;
     text-align: left;
   }
 }
+
 .page-intro {
   .container {
     .content {
@@ -98,6 +100,7 @@
     }
   }
 }
+
 .cta {
   border: 2px solid $clr1;
   border-radius: 5px;
@@ -116,7 +119,6 @@
   .image {
     display: none;
   }
-
   // @include xl-screen() {
   //   background-color: transparent;
   //
@@ -144,10 +146,10 @@
   //   }
   // }
 }
+
 .special {
   background-color: $clr-white;
   padding: 4rem 0;
-
   @include lg-screen() {
     background: $clr-white url(/assets/img/bg-organic1.svg) 25%/30% no-repeat;
   }
@@ -161,30 +163,35 @@
   & > img {
     width: 100%;
   }
+
   .icons {
     margin-bottom: 2rem;
   }
+
   .info {
     h3 {
       text-align: center;
     }
+
     p {
       margin: 0;
     }
+
     ul {
       margin: 0;
       padding: 0 20px;
     }
   }
-
   @include lg-screen() {
     display: grid;
     grid-template: auto / 25% 60% 15%;
     grid-template-areas: "image content icons";
     position: relative;
+
     .image {
       margin: 0;
     }
+
     .info {
       align-items: center;
       grid-area: content;
@@ -195,6 +202,7 @@
         text-align: left;
       }
     }
+
     .icons {
       align-items: flex-end;
       flex-direction: column;
@@ -208,6 +216,7 @@
         margin-right: 0;
       }
     }
+
     .button-group {
       align-items: flex-end;
       bottom: 1rem;
@@ -235,6 +244,7 @@
   img {
     width: 100%;
   }
+
   .image {
     position: relative;
     margin: 0 auto 4rem;
@@ -245,6 +255,7 @@
     overflow: hidden;
     max-height: 52vw;
   }
+
   .portfolio-image-mobile {
     bottom: -2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -254,9 +265,9 @@
     position: absolute;
     right: 5vw;
   }
-
   @include xl-screen() {
     margin-bottom: 8rem;
+
     .image {
       margin-left: 0;
       max-width: 50%;
@@ -290,7 +301,6 @@
       width: 55%;
     }
   }
-
   @include wide-screen() {
     .portfolio-image-desktop {
       max-height: 465px;
@@ -319,6 +329,63 @@
     &:after {
       right: 0;
       margin: auto;
+    }
+  }
+}
+
+.testimonials {
+  background: $clr-text;
+  color: white;
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+
+  .image {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: auto;
+    max-width: 75%;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  .content, .author {
+    position: relative;
+    z-index: 1;
+  }
+
+  .content {
+    font-style: italic;
+  }
+
+  .author {
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  @include lg-screen() {
+    padding: 0;
+    position: unset;
+
+    .container {
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      position: relative;
+
+      .content, .author {
+        max-width: 75%;
+      }
+
+      .image {
+        left: initial;
+        right: 0;
+      }
     }
   }
 }
