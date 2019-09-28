@@ -8,11 +8,38 @@
   display: inline-block;
   font-size: 0.875rem;
   padding: 0.25rem 2rem;
+  position: relative;
+  transition: color .1s, background-color .1s, border-color .2s;
 
   &.alt {
     background-color: white;
     border: 1px solid #00ad8f;
     color: #00ad8f;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    background-color: $clr1;
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scaleY(0);
+    transition: transform .3s ease-in-out;
+  }
+
+  &:hover {
+    border-color: $clr1;
+    background-color: transparent;
+    color: $clr1;
+
+    &:before {
+      transform: scaleY(1);
+    }
   }
 }
 
@@ -112,6 +139,19 @@ div.button-group {
   img {
     &:not(:last-child) {
       margin-right: 1rem;
+    }
+  }
+}
+
+.scroller {
+  p {color: $clr-text;}
+  img {
+    transition: transform .25s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: translateY(.5rem);
     }
   }
 }

@@ -53,3 +53,7 @@ var navBtn = document.querySelector(".contactToggle");
 navBtn.addEventListener("click", function() {
   toggleContactMenu();
 });
+
+// homepage scroll down button
+var scrollTo = document.querySelector('main > section:first-of-type');
+scrollTo.id = 'scrollTo';

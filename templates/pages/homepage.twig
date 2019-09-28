@@ -1,4 +1,4 @@
-{% extends 'layouts/homepage' %}
+{% extends 'layouts/default' %}
 
 {% block main %}
 
@@ -10,8 +10,10 @@
       {% include 'svg/website-mockup-desktop.svg'%}
     </div>
     <div>
-      <p>Here's what that means</p>
-      <img src="/assets/img/icon-downarrow.svg" alt="">
+      <a class="scroller" href="#scrollTo">
+        <p>Here's what that means</p>
+        <img src="/assets/img/icon-downarrow.svg" alt="">
+      </a>
     </div>
   </div>
   <div class="svg-container">
