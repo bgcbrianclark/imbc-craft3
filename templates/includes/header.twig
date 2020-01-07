@@ -1,7 +1,7 @@
 <header class="site-header">
   <nav class="main-nav">
     <ul>
-      {% macro is_active(segment) %}{% if craft.request.firstSegment == segment %}active{% endif %}{% endmacro %}
+      {% macro is_active(segment) %}{% if craft.app.request.segments|first == segment %}active{% endif %}{% endmacro %}
 
       <li><a href="{{ url('about') }}" class="{{ _self.is_active('about') }}">About</a></li>
       <li><a href="{{ url('services') }}" class="{{ _self.is_active('services') }}">Services</a></li>
